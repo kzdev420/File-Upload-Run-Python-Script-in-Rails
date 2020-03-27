@@ -11,7 +11,6 @@ if __name__ == '__main__':
     else:
         file_name = 'samples/BA/ 021 PRAVIN DESHMUKH-.pdf'
 
-    print(file_name)
 
     class_resume = ResumeExtractor()
 
@@ -19,7 +18,6 @@ if __name__ == '__main__':
     # file_name = join_list[50]
 
     ret = class_resume.extract(file_name)
-    print("File: " + file_name + '\n')
     print(json.dumps(ret, indent=4))
 
     # for key in sorted(ret):
